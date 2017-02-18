@@ -1,0 +1,19 @@
+{
+  "name": "ishopee",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "yoursite.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "boostrap#^3.3.7"
+  }
+}

@@ -1,0 +1,11 @@
+body {
+    background-image: url(/images/background-image.jpg);
+}
+
+.content {
+    border-top: 4px solid #e2a500;
+}
+
+.navbar.navbar-default.navbar-static-top {
+    background: #323A45;
+}
