@@ -14,6 +14,8 @@ class CreateModifyUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function ($table) {
+            $table->string('password')->nullable()->change();
+            $table->string('email')->nullable()->change();
             $table->string('avatar')->nullable();
             $table->boolean('is_active')->default(false);
             $table->integer('role');
@@ -31,6 +33,8 @@ class CreateModifyUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function($table) {
+            $table->string('password')->nullable(false)->change();
+            $table->string('email')->nullable(false)->change();
             $table->dropColumn(['avatar', 'is_active', 'role', 'facebook_id', 'google_id', 'twitter_id']);
         });
     }
